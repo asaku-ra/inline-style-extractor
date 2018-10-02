@@ -35,7 +35,7 @@ files.forEach(file => {
 
         fs.appendFileSync(
             cssFile,
-            cssClassName + `: { ${styleMatched[2]} }` + os.EOL
+            `.${cssClassName}: { ${styleMatched[2]} }` + os.EOL
         );
 
         if (classMatched = classPattern.exec(oldTag)) {
